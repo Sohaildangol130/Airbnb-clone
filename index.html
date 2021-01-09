@@ -6,7 +6,7 @@
   <title>AirBnb</title>
 
   <link rel="stylesheet" href="assets/css/tailwind.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/main.css">
   <script src="/assets/js/main.js"></script>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -19,12 +19,12 @@
       </div> 
 
       <!-- header -->
-      <header class="main-wrapper__second-section sticky top-0">
+      <header class="main-wrapper__second-section relative">
         <div class="header__main-container container mx-auto py-3 grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
           <div class="main-container__logo py-2">
             <svg version="1.1" id="Layer_1" height="30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 320.1 99.9" enable-background="new 0 0 320.1 99.9" xml:space="preserve">
-            <path fill="#FF5A5F" d="M168.7,25.1c0,3.6-2.9,6.5-6.5,6.5s-6.5-2.9-6.5-6.5s2.8-6.5,6.5-6.5C165.9,18.7,168.7,21.6,168.7,25.1z
+            <path d="M168.7,25.1c0,3.6-2.9,6.5-6.5,6.5s-6.5-2.9-6.5-6.5s2.8-6.5,6.5-6.5C165.9,18.7,168.7,21.6,168.7,25.1z
             M141.9,38.2c0,0.6,0,1.6,0,1.6s-3.1-4-9.7-4c-10.9,0-19.4,8.3-19.4,19.8c0,11.4,8.4,19.8,19.4,19.8c6.7,0,9.7-4.1,9.7-4.1v1.7
             c0,0.8,0.6,1.4,1.4,1.4h8.1V36.8c0,0-7.4,0-8.1,0C142.5,36.8,141.9,37.5,141.9,38.2z M141.9,62.3c-1.5,2.2-4.5,4.1-8.1,4.1
             c-6.4,0-11.3-4-11.3-10.8s4.9-10.8,11.3-10.8c3.5,0,6.7,2,8.1,4.1V62.3z M157.4,36.8h9.6v37.6h-9.6V36.8z M300.8,35.8
@@ -51,19 +51,19 @@
             C67.7,34.8,75.1,50,82,64.9L82,65c0.8,1.6,1.5,3.4,2.3,5c0.5,1.2,1,2.2,1.3,3.2C86.4,75.8,86.7,78.3,86.3,80.9z"/>
             </svg>
           </div>
-          <div class="main-container__search-and-form col-span-2 show-form">
-            <div class="text-center main-container__search">
-              <button class="w-2/4 ">
+          <div class="main-container__search-and-form col-span-2">
+            <div class="text-center">
+              <button class="main-container__search w-2/4" onclick="search_click()">
                 <div class="bg-white text-black rounded-full px-1 py-1 flex items-center justify-between border-2 hover:shadow-xl">
                   <p class="px-4">Start your search</p>
                   <div class="bg-red-400 px-3 py-2 rounded-full text-white">
                     <i class="fas fa-search"></i>
                   </div>
                 </div>
-              </button>
+            </button>
             </div>
             <div class="absolute main-container__form" style="left: 15%; top:27px">
-              <ul class="flex space-x-10 justify-center ">
+              <ul class="flex space-x-10 justify-center form__links">
                 <li>
                   <a href="#">Place to stay</a>
                 </li>
@@ -74,48 +74,77 @@
                   <a href="#">Online Experiences</a>
                 </li>
               </ul>   
-              <form class="px-4 py-4 my-6 rounded-full w-full grid grid-cols-5 shadow-2xl bg-white text-black">
-                <div class="col-span-2">
+              <form class="my-10 rounded-full border-2 grid grid-cols-5 shadow-2xl bg-white text-black form__container" style="position: relative; right:10px">
+                <div class="col-span-2 hover:bg-gray-200 rounded-full py-4 pl-6 container__form-input container__location" onclick="form_location()">
                   <h1 class="text-sm font-bold">Location</h1>
-                  <input type="text" class="w-5/6 bg-transparent" placeholder="Where are you going?">
+                  <input type="text" class="w-full bg-transparent w-5\/6" placeholder="Where are you going?">
+                  <div class="location__container absolute mt-8 bg-white rounded-3xl left-0 overflow-hidden hidden">
+                    <div class="flex items-center my-4 px-4 py-3 hover:bg-gray-200">
+                      <img src="/assets/images/location.jpg" class="rounded-xl" style="height: 50px;">
+                      <p class="ml-6 text-xl font-light">Explore nearby destinations</p>
+                    </div>
+                    <div class="my-6 px-4">
+                      <p class="font-bold">Nearby Destinations</p>
+                      <div class="flex flex-wrap" style="width: 400px;">
+                        <p class="border-2 border-gray-300 px-4 py-3 rounded-xl mr-3 mt-2">Pokhara</p>
+                        <p class="border-2 border-gray-300 px-4 py-3 rounded-xl mr-3 mt-2">Biratnagar</p>
+                        <p class="border-2 border-gray-300 px-4 py-3 rounded-xl mr-3 mt-2">Kathmandu</p>
+                        <p class="border-2 border-gray-300 px-4 py-3 rounded-xl mr-3 mt-2">Chitwan</p>
+                        <p class="border-2 border-gray-300 px-4 py-3 rounded-xl mr-3 mt-2">Bandipur</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div>
+                <div class="hover:bg-gray-200 rounded-full py-4 pl-6 container__form-input container__check-in">
                   <h1 class="text-sm font-bold">Check in</h1>
-                  <input type="text" class="w-5/6 bg-transparent" placeholder="Add dates">
+                  <input type="text" class=" bg-transparent" placeholder="Add dates">
   
                 </div>
-                <div>
-                  <h1 class="text-sm font-bold">Location</h1>
-                  <input type="text" class="w-5/6 bg-transparent" placeholder="Add dates">
+                <div class="hover:bg-gray-200 rounded-full py-4 pl-6 container__form-input container__check-out">
+                  <h1 class="text-sm font-bold">Checkout</h1>
+                  <input type="text" class=" bg-transparent" placeholder="Add dates">
                 </div>
-                <div>
+                <div class="hover:bg-gray-200 rounded-full py-4 pl-6 container__form-input container__guests">
                   <h1 class="text-sm font-bold">Guests</h1>
-                  <input type="text" class="w-5/6 bg-transparent" placeholder="Add guests">
+                  <input type="text" class="bg-transparent" placeholder="Add guests">
+                </div>
+                <div class="bg-red-400 px-3 py-2 rounded-full text-white absolute right-0 flex items-center justify-center" style="height: 100%; min-width: 75px">
+                  <i class="fas fa-search text-xl"></i>
+                  <p class="ml-2 text-lg font-bold hidden">Search</p>
                 </div>
               </form>  
             </div>       
           </div>
           <div class="main-container__nav-links py-2">
             <div class="flex items-center space-x-6 justify-end relative">
-              <a href="#" class="">Become a host</a>
-              <i class="fas fa-globe text-md"></i>
-              <div class="px-1 pl-2 py-1 rounded-full flex items-center justify-center space-x-4 bg-white text-black border-2">
-                <i class="fas fa-bars text-lg"></i>
-                <i class="fas fa-user-circle text-3xl"></i>
+              <a href="#" class="nav-links__host">Become a host</a>
+              <i class="fas fa-globe text-xl nav-links__language"></i>
+              <div class="relative nav-links__options">
+                <div class="options__button px-1 pl-2 py-1 rounded-full flex items-center justify-center space-x-4 bg-white text-black border-2 text-gray-500" onclick="options_btn_click()">
+                  <i class="fas fa-bars text-lg"></i>
+                  <i class="fas fa-user-circle text-3xl"></i>
+                </div>
+                <div class="options__container absolute mt-4 bg-white rounded-xl right-0 text-black overflow-hidden shadow-lg hidden" style="width: 250px;">
+                  <p class="px-4 py-2 my-2 hover:bg-gray-100 ">Sign up</p>
+                  <p class="px-4 py-2 my-2 hover:bg-gray-100">Log in</p>
+                  <hr>
+                  <p class="px-4 py-2 my-2 hover:bg-gray-100">Host your home</p>
+                  <p class="px-4 py-2 my-2 hover:bg-gray-100">Host your experience</p>
+                  <p class="px-4 py-2 my-2 hover:bg-gray-100">Help</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </header>
-      <div style="height: 90vh; background-image: url('/assets/images/hero-image.png'); background-size:cover; background-position:center; margin-top:-82px" class="main-wrapper__third-section bg-blue-200 flex items-center">
+      <div style="height: 90vh; background-image: url('/assets/images/hero-image.png'); background-size:cover; background-position:center; margin-top:-82px" class="main-wrapper__third-section flex items-center">
         <div class="container mx-auto relative top-14">
           <h1 class="text-8xl font-bold text-white">GO <br> Near</h1>
           <button class="bg-white px-4 py-2 rounded-xl mt-6">Explore nearby stays</button>
         </div>
-      </div>
-
-      <div class="asd"></div>
-      
+      </div>      
   </div>
+
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>
