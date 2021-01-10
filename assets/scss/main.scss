@@ -33,7 +33,14 @@
         }
     }
 }
-
+.main-wrapper__fourth-section{
+    .fourth-section__all-places{
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    
+}
 .sticky{
     position: fixed;
     top: 0;
@@ -89,7 +96,7 @@
     .future-getaways__links-container{
         &::-webkit-scrollbar {
             display: none;
-          }
+        }
     }
 }
 
