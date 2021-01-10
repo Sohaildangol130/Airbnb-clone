@@ -32,6 +32,23 @@ function form_location(){
     }
 }
 
+var cities = [
+    {
+        city : 'New York',
+        country: 'New York'
+    },
+    {
+        city : 'Phoenix',
+        country: 'Arizona'
+    },
+]
+
+for (let i = 0; i < cities.length; i++){
+    console.log(cities.length)
+console.log(cities[i].city)
+}
+
+
 
 
 
