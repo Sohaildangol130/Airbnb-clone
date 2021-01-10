@@ -7,7 +7,6 @@
 
   <link rel="stylesheet" href="assets/css/tailwind.css">
   <link rel="stylesheet" href="assets/css/main.css">
-  <script src="/assets/js/main.js"></script>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
@@ -19,7 +18,7 @@
       </div> 
 
       <!-- header -->
-      <header class="main-wrapper__second-section ">
+      <header class="main-wrapper__second-section">
         <div class="header__main-container container mx-auto py-3 grid grid-cols-1 md:grid-cols-4 gap-4 items-center relative">
           <div class="main-container__logo py-2">
             <svg version="1.1" id="Layer_1" height="30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -137,45 +136,128 @@
           </div>
         </div>
       </header>
-      <div style="height: 90vh; background-image: url('/assets/images/hero-image.png'); background-size:cover; background-position:center; margin-top:-82px" class="main-wrapper__third-section flex items-center">
+      <div class="main-wrapper__third-section main-wrapper__third-section flex items-center" style="height: 90vh; background-image: url('/assets/images/hero-image.png'); background-size:cover; background-position:center; margin-top:-82px">
         <div class="container mx-auto relative top-14">
           <h1 class="text-8xl font-bold text-white">Go <br> Near</h1>
           <button class="bg-white px-4 py-2 rounded-xl mt-6"><p class="font-medium">Explore nearby stays</p></button>
         </div>
       </div>  
-      <div class="container mx-auto w-full">
+      <div class=" main-wrapper__eigth-section future-getaways py-16 container mx-auto w-full">
         <h1 class="text-4xl font-bold">Inspiration for future getaways.</h1>
-        <div class="flex flex-wrap">
-          <div class="w-1/4 mt-6">
-            <p class="font-medium">Orlando</p>
-            <p class="font-light text-gray-400">Florida</p>
-          </div>
-          <div class="w-1/4 mt-6">
-            <p class="font-medium">Orlando</p>
-            <p class="font-light text-gray-400">Florida</p>
-          </div>
-          <div class="w-1/4 mt-6">
-            <p class="font-medium">Orlando</p>
-            <p class="font-light text-gray-400">Florida</p>
-          </div>
-          <div class="w-1/4 mt-6">
-            <p class="font-medium">Orlando</p>
-            <p class="font-light text-gray-400">Florida</p>
-          </div>
-          <div class="w-1/4 mt-6">
-            <p class="font-medium">Orlando</p>
-            <p class="font-light text-gray-400">Florida</p>
-          </div>
-          <div class="w-1/4 mt-6">
-            <p class="font-medium">Orlando</p>
-            <p class="font-light text-gray-400">Florida</p>
-          </div>
-        </div>    
+        <div class="future-getaways__links-container flex whitespace-nowrap overflow-auto mt-8 border-b-2 border-gray-300">
+          <p id="future-getaways__first-container__link" class="mr-6 text-lg text-gray-500 pb-3 cursor-pointer active" onclick="active(this.id)">Destinations for arts & culture</p>
+          <p id="future-getaways__second-container__link" class="mr-6 text-lg text-gray-500 pb-3 cursor-pointer" onclick="active(this.id)">Destinations for outdoor adventure</p>
+          <p id="future-getaways__third-container__link" class="mr-6 text-lg text-gray-500 pb-3 cursor-pointer" onclick="active(this.id)">Mountain Cabins</p>
+          <p id="future-getaways__fourth-container__link" class="mr-6 text-lg text-gray-500 pb-3 cursor-pointer" onclick="active(this.id)">Beach destinations</p>
+          <p id="future-getaways__fifth-container__link" class="mr-6 text-lg text-gray-500 pb-3 cursor-pointer" onclick="active(this.id)">Popular destinations</p>
+        </div>
+        <div class="future-getaways__main-container">
+          <div class="future-getaways__first-container flex flex-wrap my-2">
+            <div class="w-80 mt-6">
+              <p class="font-medium">New York</p>
+              <p class="font-light text-gray-400">New York</p>
+            </div>
+            <div class="w-80 mt-6">
+              <p class="font-medium">Phoenix</p>
+              <p class="font-light text-gray-400">Arizona</p>
+            </div>
+            <div class="w-80 mt-6">
+              <p class="font-medium">Atlanta</p>
+              <p class="font-light text-gray-400">Georgia</p>
+            </div>
+            <div class="w-80 mt-6">
+              <p class="font-medium">Chicago</p>
+              <p class="font-light text-gray-400">Illinois</p>
+            </div>
+            <div class="w-80 mt-6">
+              <p class="font-medium">Miami</p>
+              <p class="font-light text-gray-400">Florida</p>
+            </div>
+            <div class="w-80 mt-6">
+              <p class="font-medium">San Diego</p>
+              <p class="font-light text-gray-400">California</p>
+            </div>
+            <div class="w-80 mt-6">
+              <p class="font-medium">San Fancisco</p>
+              <p class="font-light text-gray-400">California</p>
+            </div>
+            <div class="w-80 mt-6">
+              <p class="font-medium">Nashville</p>
+              <p class="font-light text-gray-400">Tennessee</p>
+            </div>
+            <div class="w-80 mt-6">
+              <p class="font-medium">Seattle</p>
+              <p class="font-light text-gray-400">Washington</p>
+            </div>
+            <div class="w-80 mt-6">
+              <p class="font-medium">Bostom</p>
+              <p class="font-light text-gray-400">Massachusetts</p>
+            </div>
+            <div class="w-80 mt-6">
+              <p class="font-medium">Philadelphia</p>
+              <p class="font-light text-gray-400">Pennsylvania</p>
+            </div>
+            <div class="w-80 mt-6">
+              <p class="font-medium">Dallas</p>
+              <p class="font-light text-gray-400">Texas</p>
+            </div>
+            <div class="w-80 mt-6">
+              <p class="font-medium">Austin</p>
+              <p class="font-light text-gray-400">Texas</p>
+            </div>
+            <div class="w-80 mt-6">
+              <p class="font-medium">Washington</p>
+              <p class="font-light text-gray-400">District of Columbia</p>
+            </div>
+            <div class="w-80 mt-6">
+              <p class="font-medium">New Orleans</p>
+              <p class="font-light text-gray-400">Louisiana</p>
+            </div>
+            <div class="w-80 mt-6">
+              <p class="font-medium">San Antonio</p>
+              <p class="font-light text-gray-400">Texas</p>
+            </div>
+          </div>  
+          <div class="future-getaways__second-container flex flex-wrap my-2 hidden">
+            <div class="w-80 mt-6">
+              <p class="font-medium">New York</p>
+              <p class="font-light text-gray-400">New York</p>
+            </div>
+            <div class="w-80 mt-6">
+              <p class="font-medium">Phoenix</p>
+              <p class="font-light text-gray-400">Arizona</p>
+            </div>
+            <div class="w-80 mt-6">
+              <p class="font-medium">Atlanta</p>
+              <p class="font-light text-gray-400">Georgia</p>
+            </div>
+            <div class="w-80 mt-6">
+              <p class="font-medium">Chicago</p>
+              <p class="font-light text-gray-400">Illinois</p>
+            </div>
+            <div class="w-80 mt-6">
+              <p class="font-medium">Miami</p>
+              <p class="font-light text-gray-400">Florida</p>
+            </div>
+            <div class="w-80 mt-6">
+              <p class="font-medium">San Diego</p>
+              <p class="font-light text-gray-400">California</p>
+            </div>
+            <div class="w-80 mt-6">
+              <p class="font-medium">San Fancisco</p>
+              <p class="font-light text-gray-400">California</p>
+            </div>
+            <div class="w-80 mt-6">
+              <p class="font-medium">Nashville</p>
+              <p class="font-light text-gray-400">Tennessee</p>
+            </div>
+          </div>  
+        </div>  
       </div>  
-      <footer class="bg-gray-100">
+      <footer class="bg-gray-100 border-t-2 border-gray-300">
         <div class="container mx-auto py-10 border-b-2 border-gray-300">
           <div class="flex flex-wrap">
-            <div class="w-1/4 mt-6">
+            <div class="w-80 mt-6">
               <div class="footer_header">
                 <p class="font-medium">About</p>
               </div>
@@ -191,7 +273,7 @@
                 <a href="#" class="hover:underline">Careers</a>
               </div>
             </div>
-            <div class="w-1/4 mt-6">
+            <div class="w-80 mt-6">
               <div class="footer_header">
                 <p class="font-medium">Community</p>
               </div>
@@ -207,7 +289,7 @@
                 
               </div>
             </div>
-            <div class="w-1/4 mt-6">
+            <div class="w-80 mt-6">
               <div class="footer_header">
                 <p class="font-medium">Host</p>
               </div>
@@ -220,7 +302,7 @@
                 <a href="#" class="hover:underline">Community Center</a>                
               </div>
             </div>
-            <div class="w-1/4 mt-6">
+            <div class="w-80 mt-6">
               <div class="footer_header">
                 <p class="font-medium">Support</p>
               </div>

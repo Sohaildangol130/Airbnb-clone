@@ -80,6 +80,19 @@
     }
 }
 
+.main-wrapper__eigth-section{
+    .active{
+        border-bottom: 4px solid black;
+        color: black;
+    }
+
+    .future-getaways__links-container{
+        &::-webkit-scrollbar {
+            display: none;
+          }
+    }
+}
+
 footer{
     .footer_links{
         margin-top: 1.5rem;
