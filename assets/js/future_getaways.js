@@ -1,41 +1,7 @@
-var $header = document.querySelector('.main-wrapper__second-section');
-var $options__btn = document.querySelector('.options__button');
-var $options__container = document.querySelector('.options__container');
-var $location__container = document.querySelector('.location__container');
-var $future_getaways__first_container = document.querySelector('.future-getaways__first-container');
 var $future_getaways__links_container = document.querySelectorAll('.future-getaways__links-container>p');
 var $future_getaways__main_container = document.querySelectorAll('.future-getaways__main-container>div');
 
-window.onscroll = () => {
-    if (window.pageYOffset >= 64) {
-        $header.classList.add("sticky")
-    } else {
-        $header.classList.remove("sticky");
-    }
-}
-
-search_click = () => {
-    $header.classList.remove('sticky');
-    $header.classList.add('show-form');
-}
-
-function options_btn_click(){
-    if ($options__container.classList.contains('hidden')){
-    $options__container.classList.remove('hidden');
-    } else{
-        $options__container.classList.add('hidden');
-    }
-}
-
-function form_location(){
-    if ($location__container.classList.contains('hidden')){
-        $location__container.classList.remove('hidden');
-    } else{
-        $location__container.classList.add('hidden');
-    }
-}
-
-function active(id){
+active = (id) => {
     for (let i = 0; i<$future_getaways__links_container.length; i++){
         if ($future_getaways__links_container[i].id == id){
             $future_getaways__links_container[i].classList.add('active');
@@ -91,7 +57,3 @@ function active(id){
 
 
 // }
-
-
-
-

@@ -1,46 +1,6 @@
-.main-wrapper__second-section{
-    z-index: 1;
-    color: white;
-    .header__main-container{
-        .main-container__search-and-form{
-            *{
-                transition: 0.2s all;
-                outline: none;
-            }
-            .main-container__search{
-                opacity: 0;
-            }
-        }
-        .main-container__logo{
-            svg{
-                path{
-                    fill: white;
-                }
-            }
-        }
+@import 'sections/global';
+@import 'utilities/global';
 
-        .main-container__nav-links{
-            .nav-links__options{
-                .options__button{
-                    cursor: pointer;
-                }
-                .options__container{
-                    p{
-                        cursor: pointer;
-                    }
-                }
-            }
-        }
-    }
-}
-.fourth-section__all-places::-webkit-scrollbar, 
-.future-getaways__links-container::-webkit-scrollbar, 
-.container__all-places::-webkit-scrollbar,
-.container__host-method::-webkit-scrollbar,
-.container__all-experiences::-webkit-scrollbar
- {
-    display: none;
-}
 .sticky{
     position: fixed;
     top: 0;
@@ -54,7 +14,7 @@
         .main-container__logo{
             svg{
                 path{
-                    fill: #FF5A5F;
+                    fill: #ff2b32;
                 }
             }
         }
@@ -87,19 +47,6 @@
     }
 }
 
-.main-wrapper__eigth-section{
-    .active{
-        border-bottom: 4px solid black;
-        color: black;
-    }
-}
-
-footer{
-    .footer_links{
-        margin-top: 1.5rem;
-        a{
-            display: block;
-            margin-top: 1rem;
-        }
-    }
+.bg-gray-1000{
+    background-color: rgb(36, 36, 36);
 }

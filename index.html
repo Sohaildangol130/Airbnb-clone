@@ -12,12 +12,9 @@
 </head>
 <body>
   <div id="wrapper" class="main-wrapper">
-      <!-- covid response section -->
       <div class="main-wrapper__first-section text-center">
         <p class="text-white py-5 underline bg-black">Get the latest on our COVID-19 response.</p>
       </div> 
-
-      <!-- header -->
       <header class="main-wrapper__second-section">
         <div class="header__main-container container mx-auto py-3 grid grid-cols-1 md:grid-cols-4 gap-4 items-center relative">
           <div class="main-container__logo py-2">
@@ -55,7 +52,7 @@
               <button class="main-container__search w-2/4" onclick="search_click()">
                 <div class="bg-white text-black rounded-full px-1 py-1 flex items-center justify-between border-2 hover:shadow-xl">
                   <p class="px-4">Start your search</p>
-                  <div class="bg-red-400 px-3 py-2 rounded-full text-white">
+                  <div class="px-3 py-2 rounded-full text-white" style="background-color: #ff2b32">
                     <i class="fas fa-search"></i>
                   </div>
                 </div>
@@ -103,11 +100,46 @@
                   <h1 class="text-sm font-bold">Checkout</h1>
                   <input type="text" class=" bg-transparent" placeholder="Add dates">
                 </div>
-                <div class="hover:bg-gray-200 rounded-full py-4 pl-6 container__form-input container__guests">
+                <div class="hover:bg-gray-200 rounded-full py-4 pl-6 relative container__form-input container__guests" onclick="guests__container()">
                   <h1 class="text-sm font-bold">Guests</h1>
                   <input type="text" class="bg-transparent" placeholder="Add guests">
+                  <div class="bg-white rounded-3xl p-6 absolute top-24 right-0 guests__container hidden" style="width: 400px;">
+                    <div class="border-b-2 border-gray-300 flex justify-between items-center py-4">
+                      <div>
+                        <h5 class="text-lg font-medium">Adults</h5>
+                        <p class="text-gray-400">Ages 13 or above</p>
+                      </div>
+                      <div class="flex justify-between items-center">
+                          <div class="h-10 w-10 border-2 border-gray-300 rounded-full flex justify-center items-center"><p>-</p></div>
+                          <div class="mx-3"><p>0</p></div>
+                          <div class="h-10 w-10 border-2 border-gray-500 rounded-full flex justify-center items-center"><p>+</p></div>
+                      </div>
+                    </div>
+                    <div class="border-b-2 border-gray-300 flex justify-between items-center py-4">
+                      <div>
+                        <h5 class="text-lg font-medium">Children</h5>
+                        <p class="text-gray-400">Ages 2-12</p>
+                      </div>
+                      <div class="flex justify-between items-center">
+                          <div class="h-10 w-10 border-2 border-gray-300 rounded-full flex justify-center items-center"><p>-</p></div>
+                          <div class="mx-3"><p>0</p></div>
+                          <div class="h-10 w-10 border-2 border-gray-500 rounded-full flex justify-center items-center"><p>+</p></div>
+                      </div>
+                    </div>
+                    <div class="flex justify-between items-center py-4">
+                      <div>
+                        <h5 class="text-lg font-medium">Infants</h5>
+                        <p class="text-gray-400">Infants above 2</p>
+                      </div>
+                      <div class="flex justify-between items-center">
+                          <div class="h-10 w-10 border-2 border-gray-300 rounded-full flex justify-center items-center"><p>-</p></div>
+                          <div class="mx-3"><p>0</p></div>
+                          <div class="h-10 w-10 border-2 border-gray-500 rounded-full flex justify-center items-center"><p>+</p></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="bg-red-400 px-3 py-2 rounded-full text-white absolute right-0 flex items-center justify-center" style="height: 100%; min-width: 75px">
+                <div class="px-3 py-2 rounded-full text-white absolute right-0 flex items-center justify-center" style="height: 100%; min-width: 75px; background-color: #ff2b32">
                   <i class="fas fa-search text-xl"></i>
                   <p class="ml-2 text-lg font-bold hidden">Search</p>
                 </div>
@@ -251,7 +283,7 @@
             <button class="border-2 border-white rounded-lg py-2 px-4 hover:bg-gray-800 hidden md:block"><p>Explore all</p></button>
           </div>
           <div class="container__all-experiences flex py-10 overflow-auto ">
-            <div class="experiences__single bg-gray-700 mr-8 rounded-2xl flex-1">
+            <div class="experiences__single bg-gray-1000 mr-8 rounded-2xl flex-1">
               <div class="bg-black bg-cover  rounded-t-2xl" style="height: 91%; background-image:url('/assets/images/online_exp_1.png')"></div>
               <div class="p-4">
                 <p class="text-xl font-bold">Make handmade pasta with Italian grandmas.</p>
@@ -259,20 +291,20 @@
             </div>
             <div class="flex-1">
               <div class="flex">
-                <div class="experiences__single bg-gray-700 mr-8 flex-1 rounded-2xl">
+                <div class="experiences__single bg-gray-1000 mr-8 flex-1 rounded-2xl">
                   <div class="bg-black bg-cover  h-80 md:h-60 rounded-t-2xl" style="background-image:url('/assets/images/online_exp_2.png')"></div>
                   <div class="p-4">
                     <p class="text-xl font-bold">Practice mindful eating through zen philosophy.</p>
                   </div>
                 </div>
-                <div class="experiences__single bg-gray-700 flex-1 mr-8 rounded-2xl">
+                <div class="experiences__single bg-gray-1000 flex-1 mr-8 rounded-2xl">
                   <div class="bg-blue-200 bg-cover  md:h-60 rounded-t-2xl" style=" background-image:url('/assets/images/online_exp_3.jpg')"></div>
                   <div class="p-4">
                     <p class="text-xl font-bold">Get to know Argentina's famous Yerba Mate.</p>
                   </div>
                 </div>
               </div>
-              <div class="experiences__single bg-gray-700 mr-8 rounded-2xl md:mt-8">
+              <div class="experiences__single bg-gray-1000 mr-8 rounded-2xl md:mt-8">
                 <div class="bg-blue-200 bg-cover  h-80 md:h-60 rounded-t-2xl" style="background-image:url('/assets/images/online_exp_4.jpg')"></div>
                 <div class="p-4">
                   <p class="text-xl font-bold">Meditate to music with a Parisian concert pianist.</p>
@@ -504,6 +536,7 @@
         </div>
       </footer>
 
-  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/header.js"></script>
+  <script src="/assets/js/future_getaways.js"></script>
 </body>
 </html>
