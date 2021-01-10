@@ -6,7 +6,7 @@ var $future_getaways__first_container = document.querySelector('.future-getaways
 var $future_getaways__links_container = document.querySelectorAll('.future-getaways__links-container>p');
 var $future_getaways__main_container = document.querySelectorAll('.future-getaways__main-container>div');
 
-window.onscroll = function(){
+window.onscroll = () => {
     if (window.pageYOffset >= 64) {
         $header.classList.add("sticky")
     } else {
@@ -14,7 +14,7 @@ window.onscroll = function(){
     }
 }
 
-function search_click(){
+search_click = () => {
     $header.classList.remove('sticky');
     $header.classList.add('show-form');
 }
