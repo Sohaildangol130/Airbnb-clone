@@ -33,13 +33,12 @@
         }
     }
 }
-.main-wrapper__fourth-section{
-    .fourth-section__all-places{
-        &::-webkit-scrollbar {
-            display: none;
-        }
-    }
-    
+.fourth-section__all-places::-webkit-scrollbar, 
+.future-getaways__links-container::-webkit-scrollbar, 
+.container__all-places::-webkit-scrollbar,
+.container__host-method::-webkit-scrollbar
+ {
+    display: none;
 }
 .sticky{
     position: fixed;
@@ -91,12 +90,6 @@
     .active{
         border-bottom: 4px solid black;
         color: black;
-    }
-
-    .future-getaways__links-container{
-        &::-webkit-scrollbar {
-            display: none;
-        }
     }
 }
 
