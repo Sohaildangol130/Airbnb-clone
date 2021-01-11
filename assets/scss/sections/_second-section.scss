@@ -78,6 +78,19 @@
             }
         }
     }
+
+    .location__container{
+        .container__suggestions{
+            div{
+                p{
+                    &:hover{
+                        transform: scale(1.1,1.1);
+                        border-color: black;
+                    }
+                }
+            }
+        }
+    }    
 }
 
 

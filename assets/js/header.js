@@ -1,7 +1,7 @@
-var $header = document.querySelector('.main-wrapper__second-section');
-var $options__container = document.querySelector('.options__container');
-var $location__container = document.querySelector('.location__container');
-var $guests__container = document.querySelector('.guests__container');
+const $header = document.querySelector('.main-wrapper__second-section');
+const $options__container = document.querySelector('.options__container');
+const $location__container = document.querySelector('.location__container');
+const $guests__container = document.querySelector('.guests__container');
 
 window.onscroll = () => {
     if (window.pageYOffset >= 64) {
