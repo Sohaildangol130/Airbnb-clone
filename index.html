@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +8,28 @@
 
   <link rel="stylesheet" href="assets/css/tailwind.css">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/vendors/Calender/css/theme1.css">
+  <link rel="stylesheet" href="assets/vendors/Calender/css/theme2.css">
+  <link rel="stylesheet" href="assets/vendors/Calender/css/theme3.css">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
+
 <body>
   <div id="wrapper" class="main-wrapper">
-      <div class="main-wrapper__first-section text-center">
-        <p class="text-white py-5 underline bg-black">Get the latest on our COVID-19 response.</p>
-      </div> 
-      <header class="main-wrapper__second-section">
-        <div class="header__main-container container mx-auto py-3 grid grid-cols-1 md:grid-cols-4 gap-4 items-center relative">
-          <div class="main-container__logo hidden py-2 md:block">
-            <svg version="1.1" id="Layer_1" height="30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 320.1 99.9" enable-background="new 0 0 320.1 99.9" xml:space="preserve">
-            <path d="M168.7,25.1c0,3.6-2.9,6.5-6.5,6.5s-6.5-2.9-6.5-6.5s2.8-6.5,6.5-6.5C165.9,18.7,168.7,21.6,168.7,25.1z
+    <div class="main-wrapper__first-section text-center">
+      <p class="text-white py-5 underline bg-black">Get the latest on our COVID-19 response.</p>
+    </div>
+    <header class="main-wrapper__second-section sticky">
+      <div
+        class="header__main-container container mx-auto py-3 grid grid-cols-1 md:grid-cols-4 gap-4 items-center relative">
+        <div class="main-container__logo hidden py-2 md:block">
+          <svg version="1.1" id="Layer_1" height="30" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 320.1 99.9"
+            enable-background="new 0 0 320.1 99.9" xml:space="preserve">
+            <path
+              d="M168.7,25.1c0,3.6-2.9,6.5-6.5,6.5s-6.5-2.9-6.5-6.5s2.8-6.5,6.5-6.5C165.9,18.7,168.7,21.6,168.7,25.1z
             M141.9,38.2c0,0.6,0,1.6,0,1.6s-3.1-4-9.7-4c-10.9,0-19.4,8.3-19.4,19.8c0,11.4,8.4,19.8,19.4,19.8c6.7,0,9.7-4.1,9.7-4.1v1.7
             c0,0.8,0.6,1.4,1.4,1.4h8.1V36.8c0,0-7.4,0-8.1,0C142.5,36.8,141.9,37.5,141.9,38.2z M141.9,62.3c-1.5,2.2-4.5,4.1-8.1,4.1
             c-6.4,0-11.3-4-11.3-10.8s4.9-10.8,11.3-10.8c3.5,0,6.7,2,8.1,4.1V62.3z M157.4,36.8h9.6v37.6h-9.6V36.8z M300.8,35.8
@@ -44,665 +53,735 @@
             c-4.1,4.6-7.8,7.7-11.4,9.7c-2.6,1.5-5.1,2.3-7.6,2.6c-2.7,0.3-5.3-0.1-7.6-1c-4.9-2-8.4-6.5-9.1-11.7c-0.3-2.5-0.1-5,0.9-7.8
             c0.3-1,0.8-2,1.3-3.2c0.7-1.6,1.5-3.3,2.3-5l0.1-0.2c6.9-14.9,14.3-30.1,22-44.9l0.3-0.6c0.8-1.5,1.6-3.1,2.4-4.6
             c0.8-1.6,1.7-3.1,2.8-4.4c2.1-2.4,4.9-3.7,8-3.7c3.1,0,5.9,1.3,8,3.7c1.1,1.3,2,2.8,2.8,4.4c0.8,1.5,1.6,3.1,2.4,4.6l0.3,0.6
-            C67.7,34.8,75.1,50,82,64.9L82,65c0.8,1.6,1.5,3.4,2.3,5c0.5,1.2,1,2.2,1.3,3.2C86.4,75.8,86.7,78.3,86.3,80.9z"/>
-            </svg>
-          </div>
-          <div class="main-container__search-and-form col-span-12 md:col-span-2">
-            <div class="text-center">
-              <button class="main-container__search w-2/4" onclick="search_click()">
-                <div class="bg-white text-black rounded-full px-1 py-1 flex items-center justify-between border-2 hover:shadow-xl">
-                  <p class="px-4">Start your search</p>
-                  <div class="px-3 py-2 rounded-full text-white" style="background-color: #ff2b32">
-                    <i class="fas fa-search"></i>
-                  </div>
+            C67.7,34.8,75.1,50,82,64.9L82,65c0.8,1.6,1.5,3.4,2.3,5c0.5,1.2,1,2.2,1.3,3.2C86.4,75.8,86.7,78.3,86.3,80.9z" />
+          </svg>
+        </div>
+        <div class="main-container__search-and-form col-span-12 md:col-span-2">
+          <div class="text-center">
+            <button class="main-container__search w-2/4" onclick="search_click()">
+              <div
+                class="bg-white text-black rounded-full px-1 py-1 flex items-center justify-between border-2 hover:shadow-xl">
+                <p class="px-4">Start your search</p>
+                <div class="px-3 py-2 rounded-full text-white" style="background-color: #ff2b32">
+                  <i class="fas fa-search"></i>
                 </div>
+              </div>
             </button>
-            </div>
-            <div class="absolute main-container__form" style="top: 27px; left: 8%">
-              <ul class="flex space-x-10 justify-center form__links">
-                <li>
-                  <a href="#">Place to stay</a>
-                </li>
-                <li>
-                  <a href="#">Experiences</a>
-                </li>
-                <li>
-                  <a href="#">Online Experiences</a>
-                </li>
-              </ul>   
-              <form class="my-10 rounded-full border-2 grid grid-cols-5 shadow-2xl bg-white text-black form__container" style="position: relative; right:10px">
-                <div class="col-span-2 hover:bg-gray-200 rounded-full py-4 pl-6 container__form-input container__location" onclick="form_location()">
-                  <h1 class="text-sm font-bold">Location</h1>
-                  <input type="text" class="w-full bg-transparent w-5\/6" placeholder="Where are you going?">
-                  <div class="location__container absolute z-10 mt-8 bg-white rounded-3xl left-0 overflow-hidden hidden">
-                    <div class="flex items-center my-4 px-4 py-3 hover:bg-gray-200">
-                      <img src="/assets/images/location.jpg" class="rounded-xl" style="height: 50px;">
-                      <p class="ml-6 text-xl font-light">Explore nearby destinations</p>
+          </div>
+          <div class="absolute main-container__form" style="top: 27px; left: 8%">
+            <ul class="flex space-x-10 justify-center form__links">
+              <li>
+                <a href="#">Place to stay</a>
+              </li>
+              <li>
+                <a href="#">Experiences</a>
+              </li>
+              <li>
+                <a href="#">Online Experiences</a>
+              </li>
+            </ul>
+            <form class="my-10 rounded-full border-2 grid grid-cols-5 shadow-2xl bg-white text-black form__container"
+              style="position: relative; right:10px">
+              <div class="col-span-2 hover:bg-gray-200 rounded-full py-4 pl-6 container__form-input container__location"
+                onclick="form_location()">
+                <h1 class="text-sm font-bold">Location</h1>
+                <input type="text" class="w-full bg-transparent w-5\/6" placeholder="Where are you going?">
+                <div class="location__container absolute z-10 mt-8 bg-white rounded-3xl left-0 overflow-hidden hidden">
+                  <div class="flex items-center my-4 px-4 py-3 hover:bg-gray-200">
+                    <img src="/assets/images/location.jpg" class="rounded-xl" style="height: 50px;">
+                    <p class="ml-6 text-xl font-light">Explore nearby destinations</p>
+                  </div>
+                  <div class="container__suggestions my-6 px-4">
+                    <p class="font-bold">Nearby Destinations</p>
+                    <div class="flex flex-wrap" style="width: 400px;">
+                      <p class="border-2 border-gray-300 px-4 py-3 rounded-xl mr-3 mt-2 cursor-pointer">Pokhara</p>
+                      <p class="border-2 border-gray-300 px-4 py-3 rounded-xl mr-3 mt-2 cursor-pointer">Biratnagar</p>
+                      <p class="border-2 border-gray-300 px-4 py-3 rounded-xl mr-3 mt-2 cursor-pointer">Kathmandu</p>
+                      <p class="border-2 border-gray-300 px-4 py-3 rounded-xl mr-3 mt-2 cursor-pointer">Chitwan</p>
+                      <p class="border-2 border-gray-300 px-4 py-3 rounded-xl mr-3 mt-2 cursor-pointer">Bandipur</p>
                     </div>
-                    <div class="container__suggestions my-6 px-4">
-                      <p class="font-bold">Nearby Destinations</p>
-                      <div class="flex flex-wrap" style="width: 400px;">
-                        <p class="border-2 border-gray-300 px-4 py-3 rounded-xl mr-3 mt-2 cursor-pointer">Pokhara</p>
-                        <p class="border-2 border-gray-300 px-4 py-3 rounded-xl mr-3 mt-2 cursor-pointer">Biratnagar</p>
-                        <p class="border-2 border-gray-300 px-4 py-3 rounded-xl mr-3 mt-2 cursor-pointer">Kathmandu</p>
-                        <p class="border-2 border-gray-300 px-4 py-3 rounded-xl mr-3 mt-2 cursor-pointer">Chitwan</p>
-                        <p class="border-2 border-gray-300 px-4 py-3 rounded-xl mr-3 mt-2 cursor-pointer">Bandipur</p>
+                  </div>
+                </div>
+              </div>
+              <div class="hover:bg-gray-200 relative rounded-full py-4 pl-6 container__form-input container__check-in" onclick="check_in_out()">
+                <h1 class="text-sm font-bold">Check in</h1>
+                <input type="text" class=" bg-transparent" placeholder="Add dates">
+                <div id="check-in-calender" class="absolute bg-white rounded-2xl p-6 hidden" style="top:100px; left:-200px">
+                </div>
+              </div>
+              <div class="hover:bg-gray-200 rounded-full py-4 pl-6 container__form-input container__check-out" onclick="check_in_out()">
+                <h1 class="text-sm font-bold">Checkout</h1>
+                <input type="text" class=" bg-transparent" placeholder="Add dates">
+              </div>
+              <div class="hover:bg-gray-200 rounded-full py-4 pl-6 relative container__form-input container__guests"
+                onclick="guests__container()">
+                <h1 class="text-sm font-bold">Guests</h1>
+                <input type="text" class="bg-transparent" placeholder="Add guests">
+                <div class="bg-white rounded-3xl p-6 absolute top-24 right-0 guests__container hidden"
+                  style="width: 400px;">
+                  <div class="border-b-2 border-gray-300 flex justify-between items-center py-4">
+                    <div>
+                      <h5 class="text-lg font-medium">Adults</h5>
+                      <p class="text-gray-400">Ages 13 or above</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                      <div class="h-10 w-10 border-2 border-gray-300 rounded-full flex justify-center items-center">
+                        <p>-</p>
+                      </div>
+                      <div class="mx-3">
+                        <p>0</p>
+                      </div>
+                      <div class="h-10 w-10 border-2 border-gray-500 rounded-full flex justify-center items-center">
+                        <p>+</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border-b-2 border-gray-300 flex justify-between items-center py-4">
+                    <div>
+                      <h5 class="text-lg font-medium">Children</h5>
+                      <p class="text-gray-400">Ages 2-12</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                      <div class="h-10 w-10 border-2 border-gray-300 rounded-full flex justify-center items-center">
+                        <p>-</p>
+                      </div>
+                      <div class="mx-3">
+                        <p>0</p>
+                      </div>
+                      <div class="h-10 w-10 border-2 border-gray-500 rounded-full flex justify-center items-center">
+                        <p>+</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center py-4">
+                    <div>
+                      <h5 class="text-lg font-medium">Infants</h5>
+                      <p class="text-gray-400">Infants above 2</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                      <div class="h-10 w-10 border-2 border-gray-300 rounded-full flex justify-center items-center">
+                        <p>-</p>
+                      </div>
+                      <div class="mx-3">
+                        <p>0</p>
+                      </div>
+                      <div class="h-10 w-10 border-2 border-gray-500 rounded-full flex justify-center items-center">
+                        <p>+</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="hover:bg-gray-200 rounded-full py-4 pl-6 container__form-input container__check-in">
-                  <h1 class="text-sm font-bold">Check in</h1>
-                  <input type="text" class=" bg-transparent" placeholder="Add dates">
-  
-                </div>
-                <div class="hover:bg-gray-200 rounded-full py-4 pl-6 container__form-input container__check-out">
-                  <h1 class="text-sm font-bold">Checkout</h1>
-                  <input type="text" class=" bg-transparent" placeholder="Add dates">
-                </div>
-                <div class="hover:bg-gray-200 rounded-full py-4 pl-6 relative container__form-input container__guests" onclick="guests__container()">
-                  <h1 class="text-sm font-bold">Guests</h1>
-                  <input type="text" class="bg-transparent" placeholder="Add guests">
-                  <div class="bg-white rounded-3xl p-6 absolute top-24 right-0 guests__container hidden" style="width: 400px;">
-                    <div class="border-b-2 border-gray-300 flex justify-between items-center py-4">
-                      <div>
-                        <h5 class="text-lg font-medium">Adults</h5>
-                        <p class="text-gray-400">Ages 13 or above</p>
-                      </div>
-                      <div class="flex justify-between items-center">
-                          <div class="h-10 w-10 border-2 border-gray-300 rounded-full flex justify-center items-center"><p>-</p></div>
-                          <div class="mx-3"><p>0</p></div>
-                          <div class="h-10 w-10 border-2 border-gray-500 rounded-full flex justify-center items-center"><p>+</p></div>
-                      </div>
-                    </div>
-                    <div class="border-b-2 border-gray-300 flex justify-between items-center py-4">
-                      <div>
-                        <h5 class="text-lg font-medium">Children</h5>
-                        <p class="text-gray-400">Ages 2-12</p>
-                      </div>
-                      <div class="flex justify-between items-center">
-                          <div class="h-10 w-10 border-2 border-gray-300 rounded-full flex justify-center items-center"><p>-</p></div>
-                          <div class="mx-3"><p>0</p></div>
-                          <div class="h-10 w-10 border-2 border-gray-500 rounded-full flex justify-center items-center"><p>+</p></div>
-                      </div>
-                    </div>
-                    <div class="flex justify-between items-center py-4">
-                      <div>
-                        <h5 class="text-lg font-medium">Infants</h5>
-                        <p class="text-gray-400">Infants above 2</p>
-                      </div>
-                      <div class="flex justify-between items-center">
-                          <div class="h-10 w-10 border-2 border-gray-300 rounded-full flex justify-center items-center"><p>-</p></div>
-                          <div class="mx-3"><p>0</p></div>
-                          <div class="h-10 w-10 border-2 border-gray-500 rounded-full flex justify-center items-center"><p>+</p></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="px-3 py-2 rounded-full text-white absolute right-0 flex items-center justify-center" style="height: 100%; min-width: 75px; background-color: #ff2b32">
-                  <i class="fas fa-search text-xl"></i>
-                  <p class="ml-2 text-lg font-bold hidden">Search</p>
-                </div>
-              </form>  
-            </div>       
-          </div>
-          <div class="main-container__nav-links hidden py-2 md:block">
-            <div class="flex items-center space-x-6 justify-end relative">
-              <a href="#" class="nav-links__host">Become a host</a>
-              <i class="fas fa-globe text-xl nav-links__language"></i>
-              <div class="relative nav-links__options">
-                <div class="options__button px-1 pl-2 py-1 rounded-full flex items-center justify-center space-x-4 bg-white text-black border-2 text-gray-500" onclick="options_btn_click()">
-                  <i class="fas fa-bars text-lg"></i>
-                  <i class="fas fa-user-circle text-3xl"></i>
-                </div>
-                <div class="options__container absolute mt-4 bg-white rounded-xl right-0 text-black overflow-hidden shadow-lg hidden" style="width: 250px;">
-                  <p class="px-4 py-2 my-2 hover:bg-gray-100 ">Sign up</p>
-                  <p class="px-4 py-2 my-2 hover:bg-gray-100">Log in</p>
-                  <hr>
-                  <p class="px-4 py-2 my-2 hover:bg-gray-100">Host your home</p>
-                  <p class="px-4 py-2 my-2 hover:bg-gray-100">Host your experience</p>
-                  <p class="px-4 py-2 my-2 hover:bg-gray-100">Help</p>
-                </div>
               </div>
-            </div>
+              <div class="px-3 py-2 rounded-full text-white absolute right-0 flex items-center justify-center"
+                style="height: 100%; min-width: 75px; background-color: #ff2b32">
+                <i class="fas fa-search text-xl"></i>
+                <p class="ml-2 text-lg font-bold hidden">Search</p>
+              </div>
+            </form>
           </div>
         </div>
-      </header>
-      <div class="main-wrapper__third-section main-wrapper__third-section flex items-center" style="height: 90vh; background-image: url('/assets/images/hero-image.png'); background-size:cover; background-position:center; margin-top:-82px">
-        <div class="container mx-auto relative top-14">
-          <h1 class="text-8xl font-bold text-white">Go <br> Near</h1>
-          <button class="bg-white px-4 py-2 rounded-xl mt-6"><p class="font-medium">Explore nearby stays</p></button>
-        </div>
-      </div>  
-      <div class="main-wrapper__fourth-section">
-        <div class="fourth-section__all-places container mx-auto flex py-10 whitespace-nowrap overflow-auto">
-          <div class="all-places__container w-80 mr-10">
-            <div class="container__single flex items-center">
-              <div class="single__image w-20 h-20 rounded-xl bg-black bg-cover mr-4" style="background-image: url('/assets/images/bandipur.png');">
+        <div class="main-container__nav-links hidden py-2 md:block">
+          <div class="flex items-center space-x-6 justify-end relative">
+            <a href="#" class="nav-links__host">Become a host</a>
+            <i class="fas fa-globe text-xl nav-links__language"></i>
+            <div class="relative nav-links__options">
+              <div class="options__button px-1 pl-2 py-1 rounded-full flex items-center justify-center space-x-4 bg-white text-black border-2 text-gray-500"
+                onclick="options_btn_click()">
+                <i class="fas fa-bars text-lg"></i>
+                <i class="fas fa-user-circle text-3xl"></i>
               </div>
-              <div class="single__description">
-                <p class=" font-bold text-lg">Bandipur</p>
-                <p class="text-xl">3 hour drive</p>
-              </div>
-            </div>
-            <div class="container__single flex items-center mt-4">
-              <div class="single__image w-20 h-20 rounded-xl bg-black bg-cover mr-4" style="background-image: url('/assets/images/kathmandu.png');">
-              </div>
-              <div class="single__description">
-                <p class=" font-bold text-lg">Kathmandu</p>
-                <p class="text-xl">15 mins drive</p>
-              </div>
-            </div>
-          </div>
-          <div class="all-places__container w-80 mr-10">
-            <div class="container__single flex items-center">
-              <div class="single__image w-20 h-20 rounded-xl bg-black bg-cover mr-4" style="background-image: url('/assets/images/kirtipur.png');">
-              </div>
-              <div class="single__description">
-                <p class=" font-bold text-lg">Kirtipur</p>
-                <p class="text-xl">30 mins drive</p>
-              </div>
-            </div>
-            <div class="container__single flex items-center mt-4">
-              <div class="single__image w-20 h-20 rounded-xl bg-black bg-cover mr-4" style="background-image: url('/assets/images/lalitpur.png');">
-              </div>
-              <div class="single__description">
-                <p class=" font-bold text-lg">Lalitpur</p>
-                <p class="text-xl">15 mins drive</p>
-              </div>
-            </div>
-          </div>
-          <div class="all-places__container w-80 mr-10">
-            <div class="container__single flex items-center">
-              <div class="single__image w-20 h-20 rounded-xl bg-black bg-cover mr-4" style="background-image: url('/assets/images/godawari.png');">
-              </div>
-              <div class="single__description">
-                <p class=" font-bold text-lg">Godawari</p>
-                <p class="text-xl">30 mins drive</p>
-              </div>
-            </div>
-            <div class="container__single flex items-center mt-4">
-              <div class="single__image w-20 h-20 rounded-xl bg-black bg-cover mr-4" style="background-image: url('/assets/images/bhaktapur.png');">
-              </div>
-              <div class="single__description">
-                <p class=" font-bold text-lg">Bhaktapur</p>
-                <p class="text-xl">30 mins drive</p>
-              </div>
-            </div>
-          </div>
-          <div class="all-places__container w-80 mr-10">
-            <div class="container__single flex items-center">
-              <div class="single__image w-20 h-20 rounded-xl bg-black bg-cover mr-4" style="background-image: url('/assets/images/dhulikhel.png');">
-              </div>
-              <div class="single__description">
-                <p class=" font-bold text-lg">Dhulikhel</p>
-                <p class="text-xl">30 mins drive</p>
-              </div>
-            </div>
-            <div class="container__single flex items-center mt-4">
-              <div class="single__image w-20 h-20 rounded-xl bg-black bg-cover mr-4" style="background-image: url('/assets/images/bharatpur.png');">
-              </div>
-              <div class="single__description">
-                <p class=" font-bold text-lg">Bharatpur Metro</p>
-                <p class="text-xl">2.5 hour drive</p>
+              <div class="options__container absolute mt-4 bg-white rounded-xl right-0 text-black overflow-hidden shadow-lg hidden"
+                style="width: 250px;">
+                <p class="px-4 py-2 my-2 hover:bg-gray-100 ">Sign up</p>
+                <p class="px-4 py-2 my-2 hover:bg-gray-100">Log in</p>
+                <hr>
+                <p class="px-4 py-2 my-2 hover:bg-gray-100">Host your home</p>
+                <p class="px-4 py-2 my-2 hover:bg-gray-100">Host your experience</p>
+                <p class="px-4 py-2 my-2 hover:bg-gray-100">Help</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="main-wrapper__fifth-section py-10">
-        <div class="live-anywhere__container container mx-auto">
-          <h1 class="text-4xl font-bold">Live anywhere</h1>
-          <div class="container__all-places flex md:justify-between mt-10 whitespace-nowrap overflow-auto">
-            <div class="all-places__single mr-8">
-              <div class="bg-black bg-cover p-2 h-80 w-80 rounded-2xl" style="background-image: url('https://a0.muscache.com/im/pictures/a0316ecb-e49b-4b3a-b6b6-c2876b820e8c.jpg?im_w=720');"></div>
-              <h5 class="font-medium text-xl mt-2">Entire homes</h5>
+    </header>
+    <div class="main-wrapper__third-section main-wrapper__third-section flex items-center"
+      style="height: 90vh; background-image: url('/assets/images/hero-image.png'); background-size:cover; background-position:center; margin-top:-82px">
+      <div class="container mx-auto relative top-14">
+        <h1 class="text-8xl font-bold text-white">Go <br> Near</h1>
+        <button class="bg-white px-4 py-2 rounded-xl mt-6">
+          <p class="font-medium">Explore nearby stays</p>
+        </button>
+      </div>
+    </div>
+    <div class="main-wrapper__fourth-section">
+      <div class="fourth-section__all-places container mx-auto flex py-10 whitespace-nowrap overflow-auto">
+        <div class="all-places__container w-80 mr-10">
+          <div class="container__single flex items-center">
+            <div class="single__image w-20 h-20 rounded-xl bg-black bg-cover mr-4"
+              style="background-image: url('/assets/images/bandipur.png');">
             </div>
-            <div class="all-places__single mr-8">
-              <div class="bg-black bg-cover p-2 h-80 w-80 rounded-2xl" style="background-image: url('https://a0.muscache.com/im/pictures/ff69ac49-64e7-4f4a-ae2b-ee01163d0790.jpg?im_w=720');"></div>
-              <h5 class="font-medium text-xl mt-2">Cabins and cottages</h5>
+            <div class="single__description">
+              <p class=" font-bold text-lg">Bandipur</p>
+              <p class="text-xl">3 hour drive</p>
             </div>
-            <div class="all-places__single mr-8">
-              <div class="bg-black bg-cover p-2 h-80 w-80 rounded-2xl" style="background-image: url('https://a0.muscache.com/im/pictures/ce6814ba-ed53-4d6e-b8f8-c0bbcf821011.jpg?im_w=720');"></div>
-              <h5 class="font-medium text-xl mt-2">Unique stays</h5>
+          </div>
+          <div class="container__single flex items-center mt-4">
+            <div class="single__image w-20 h-20 rounded-xl bg-black bg-cover mr-4"
+              style="background-image: url('/assets/images/kathmandu.png');">
             </div>
-            <div class="all-places__single">
-              <div class="bg-black bg-cover p-2 h-80 w-80 rounded-2xl" style="background-image: url('https://a0.muscache.com/im/pictures/fbe849a4-841a-41b3-b770-419402a6316f.jpg?im_w=720');"></div>
-              <h5 class="font-medium text-xl mt-2">Pets welcome</h5>
+            <div class="single__description">
+              <p class=" font-bold text-lg">Kathmandu</p>
+              <p class="text-xl">15 mins drive</p>
+            </div>
+          </div>
+        </div>
+        <div class="all-places__container w-80 mr-10">
+          <div class="container__single flex items-center">
+            <div class="single__image w-20 h-20 rounded-xl bg-black bg-cover mr-4"
+              style="background-image: url('/assets/images/kirtipur.png');">
+            </div>
+            <div class="single__description">
+              <p class=" font-bold text-lg">Kirtipur</p>
+              <p class="text-xl">30 mins drive</p>
+            </div>
+          </div>
+          <div class="container__single flex items-center mt-4">
+            <div class="single__image w-20 h-20 rounded-xl bg-black bg-cover mr-4"
+              style="background-image: url('/assets/images/lalitpur.png');">
+            </div>
+            <div class="single__description">
+              <p class=" font-bold text-lg">Lalitpur</p>
+              <p class="text-xl">15 mins drive</p>
+            </div>
+          </div>
+        </div>
+        <div class="all-places__container w-80 mr-10">
+          <div class="container__single flex items-center">
+            <div class="single__image w-20 h-20 rounded-xl bg-black bg-cover mr-4"
+              style="background-image: url('/assets/images/godawari.png');">
+            </div>
+            <div class="single__description">
+              <p class=" font-bold text-lg">Godawari</p>
+              <p class="text-xl">30 mins drive</p>
+            </div>
+          </div>
+          <div class="container__single flex items-center mt-4">
+            <div class="single__image w-20 h-20 rounded-xl bg-black bg-cover mr-4"
+              style="background-image: url('/assets/images/bhaktapur.png');">
+            </div>
+            <div class="single__description">
+              <p class=" font-bold text-lg">Bhaktapur</p>
+              <p class="text-xl">30 mins drive</p>
+            </div>
+          </div>
+        </div>
+        <div class="all-places__container w-80 mr-10">
+          <div class="container__single flex items-center">
+            <div class="single__image w-20 h-20 rounded-xl bg-black bg-cover mr-4"
+              style="background-image: url('/assets/images/dhulikhel.png');">
+            </div>
+            <div class="single__description">
+              <p class=" font-bold text-lg">Dhulikhel</p>
+              <p class="text-xl">30 mins drive</p>
+            </div>
+          </div>
+          <div class="container__single flex items-center mt-4">
+            <div class="single__image w-20 h-20 rounded-xl bg-black bg-cover mr-4"
+              style="background-image: url('/assets/images/bharatpur.png');">
+            </div>
+            <div class="single__description">
+              <p class=" font-bold text-lg">Bharatpur Metro</p>
+              <p class="text-xl">2.5 hour drive</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="main-wrapper__sixth-section py-10 bg-black text-white">
-        <div class="online-experiences__container container mx-auto">
-          <div class="flex items-start justify-between">
-            <div>
-              <h1 class="text-4xl font-bold">Online Experiences</h1>
-              <p class="text-xl">Interactive activities you can do together, led by expert hosts.</p>
+    </div>
+    <div class="main-wrapper__fifth-section py-10">
+      <div class="live-anywhere__container container mx-auto">
+        <h1 class="text-4xl font-bold">Live anywhere</h1>
+        <div class="container__all-places flex md:justify-between mt-10 whitespace-nowrap overflow-auto">
+          <div class="all-places__single mr-8">
+            <div class="bg-black bg-cover p-2 h-80 w-80 rounded-2xl"
+              style="background-image: url('https://a0.muscache.com/im/pictures/a0316ecb-e49b-4b3a-b6b6-c2876b820e8c.jpg?im_w=720');">
             </div>
-            <button class="border-2 border-white rounded-lg py-2 px-4 hover:bg-gray-800 hidden md:block"><p>Explore all</p></button>
+            <h5 class="font-medium text-xl mt-2">Entire homes</h5>
           </div>
-          <div class="container__all-experiences flex py-10 overflow-auto ">
-            <div class="experiences__single bg-gray-1000 mr-8 rounded-2xl flex-1">
-              <div class="bg-black bg-cover  rounded-t-2xl" style="height: 91%; background-image:url('/assets/images/online_exp_1.png')"></div>
-              <div class="p-4">
-                <p class="text-xl font-bold">Make handmade pasta with Italian grandmas.</p>
-              </div>
+          <div class="all-places__single mr-8">
+            <div class="bg-black bg-cover p-2 h-80 w-80 rounded-2xl"
+              style="background-image: url('https://a0.muscache.com/im/pictures/ff69ac49-64e7-4f4a-ae2b-ee01163d0790.jpg?im_w=720');">
             </div>
-            <div class="flex-1">
-              <div class="flex">
-                <div class="experiences__single bg-gray-1000 mr-8 flex-1 rounded-2xl">
-                  <div class="bg-black bg-cover  h-80 md:h-60 rounded-t-2xl" style="background-image:url('/assets/images/online_exp_2.png')"></div>
-                  <div class="p-4">
-                    <p class="text-xl font-bold">Practice mindful eating through zen philosophy.</p>
-                  </div>
-                </div>
-                <div class="experiences__single bg-gray-1000 flex-1 mr-8 rounded-2xl">
-                  <div class="bg-blue-200 bg-cover  md:h-60 rounded-t-2xl" style=" background-image:url('/assets/images/online_exp_3.jpg')"></div>
-                  <div class="p-4">
-                    <p class="text-xl font-bold">Get to know Argentina's famous Yerba Mate.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="experiences__single bg-gray-1000 mr-8 rounded-2xl md:mt-8">
-                <div class="bg-blue-200 bg-cover  h-80 md:h-60 rounded-t-2xl" style="background-image:url('/assets/images/online_exp_4.jpg')"></div>
+            <h5 class="font-medium text-xl mt-2">Cabins and cottages</h5>
+          </div>
+          <div class="all-places__single mr-8">
+            <div class="bg-black bg-cover p-2 h-80 w-80 rounded-2xl"
+              style="background-image: url('https://a0.muscache.com/im/pictures/ce6814ba-ed53-4d6e-b8f8-c0bbcf821011.jpg?im_w=720');">
+            </div>
+            <h5 class="font-medium text-xl mt-2">Unique stays</h5>
+          </div>
+          <div class="all-places__single">
+            <div class="bg-black bg-cover p-2 h-80 w-80 rounded-2xl"
+              style="background-image: url('https://a0.muscache.com/im/pictures/fbe849a4-841a-41b3-b770-419402a6316f.jpg?im_w=720');">
+            </div>
+            <h5 class="font-medium text-xl mt-2">Pets welcome</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-wrapper__sixth-section py-10 bg-black text-white">
+      <div class="online-experiences__container container mx-auto">
+        <div class="flex items-start justify-between">
+          <div>
+            <h1 class="text-4xl font-bold">Online Experiences</h1>
+            <p class="text-xl">Interactive activities you can do together, led by expert hosts.</p>
+          </div>
+          <button class="border-2 border-white rounded-lg py-2 px-4 hover:bg-gray-800 hidden md:block">
+            <p>Explore all</p>
+          </button>
+        </div>
+        <div class="container__all-experiences flex py-10 overflow-auto ">
+          <div class="experiences__single bg-gray-1000 mr-8 rounded-2xl flex-1">
+            <div class="bg-black bg-cover  rounded-t-2xl"
+              style="height: 91%; background-image:url('/assets/images/online_exp_1.png')"></div>
+            <div class="p-4">
+              <p class="text-xl font-bold">Make handmade pasta with Italian grandmas.</p>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="flex">
+              <div class="experiences__single bg-gray-1000 mr-8 flex-1 rounded-2xl">
+                <div class="bg-black bg-cover  h-80 md:h-60 rounded-t-2xl"
+                  style="background-image:url('/assets/images/online_exp_2.png')"></div>
                 <div class="p-4">
-                  <p class="text-xl font-bold">Meditate to music with a Parisian concert pianist.</p>
+                  <p class="text-xl font-bold">Practice mindful eating through zen philosophy.</p>
+                </div>
+              </div>
+              <div class="experiences__single bg-gray-1000 flex-1 mr-8 rounded-2xl">
+                <div class="bg-blue-200 bg-cover  md:h-60 rounded-t-2xl"
+                  style=" background-image:url('/assets/images/online_exp_3.jpg')"></div>
+                <div class="p-4">
+                  <p class="text-xl font-bold">Get to know Argentina's famous Yerba Mate.</p>
                 </div>
               </div>
             </div>
+            <div class="experiences__single bg-gray-1000 mr-8 rounded-2xl md:mt-8">
+              <div class="bg-blue-200 bg-cover  h-80 md:h-60 rounded-t-2xl"
+                style="background-image:url('/assets/images/online_exp_4.jpg')"></div>
+              <div class="p-4">
+                <p class="text-xl font-bold">Meditate to music with a Parisian concert pianist.</p>
+              </div>
+            </div>
           </div>
-          <button class="border-2 border-white rounded-lg py-2 px-4 hover:bg-gray-800 md:hidden"><p>Explore all</p></button>
-        </div>        
+        </div>
+        <button class="border-2 border-white rounded-lg py-2 px-4 hover:bg-gray-800 md:hidden">
+          <p>Explore all</p>
+        </button>
       </div>
-      <div class="main-wrapper__seventh-section py-10">
-        <div class="join-airbnb__container container mx-auto">
-          <h1 class="text-4xl font-bold">Join millions of host on Airbnb</h1>
-          <div class="container__host-method flex justify-between mt-10  whitespace-nowrap overflow-auto">
-            <div class="host-method__single mr-8">
-              <div class="bg-black bg-cover p-2 w-96 h-80 rounded-2xl" style="background-image: url('https://a0.muscache.com/im/pictures/2a16f833-464c-446c-8d74-33eb8c643975.jpg?im_w=720');"></div>
-              <h5 class="font-medium text-xl mt-2">Host your home</h5>
+    </div>
+    <div class="main-wrapper__seventh-section py-10">
+      <div class="join-airbnb__container container mx-auto">
+        <h1 class="text-4xl font-bold">Join millions of host on Airbnb</h1>
+        <div class="container__host-method flex justify-between mt-10  whitespace-nowrap overflow-auto">
+          <div class="host-method__single mr-8">
+            <div class="bg-black bg-cover p-2 w-96 h-80 rounded-2xl"
+              style="background-image: url('https://a0.muscache.com/im/pictures/2a16f833-464c-446c-8d74-33eb8c643975.jpg?im_w=720');">
             </div>
-            <div class="host-method__single mr-8">
-              <div class="bg-black bg-cover p-2 w-96 h-80 rounded-2xl" style="background-image: url('https://a0.muscache.com/im/pictures/426a8116-0b94-4407-ae87-924126c81d78.jpg?im_w=720');"></div>
-              <h5 class="font-medium text-xl mt-2">Host an Online Experience</h5>
+            <h5 class="font-medium text-xl mt-2">Host your home</h5>
+          </div>
+          <div class="host-method__single mr-8">
+            <div class="bg-black bg-cover p-2 w-96 h-80 rounded-2xl"
+              style="background-image: url('https://a0.muscache.com/im/pictures/426a8116-0b94-4407-ae87-924126c81d78.jpg?im_w=720');">
             </div>
-            <div class="host-method__single">
-              <div class="bg-black bg-cover p-2 w-96 h-80 rounded-2xl" style="background-image: url('https://a0.muscache.com/im/pictures/a84e92bd-68e6-4ce2-9fdf-b2ce1a377f53.jpg?im_w=720');"></div>
-              <h5 class="font-medium text-xl mt-2">Host an Experience</h5>
+            <h5 class="font-medium text-xl mt-2">Host an Online Experience</h5>
+          </div>
+          <div class="host-method__single">
+            <div class="bg-black bg-cover p-2 w-96 h-80 rounded-2xl"
+              style="background-image: url('https://a0.muscache.com/im/pictures/a84e92bd-68e6-4ce2-9fdf-b2ce1a377f53.jpg?im_w=720');">
+            </div>
+            <h5 class="font-medium text-xl mt-2">Host an Experience</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=" main-wrapper__eigth-section future-getaways pt-10 pb-20 container mx-auto w-full">
+      <h1 class="text-4xl font-bold">Inspiration for future getaways.</h1>
+      <div
+        class="future-getaways__links-container flex whitespace-nowrap overflow-auto mt-8 border-b-2 border-gray-300">
+        <p id="future-getaways__first-container__link" class="mr-6 text-lg text-gray-500 pb-3 cursor-pointer active"
+          onclick="active(this.id)">Destinations for arts & culture</p>
+        <p id="future-getaways__second-container__link" class="mr-6 text-lg text-gray-500 pb-3 cursor-pointer"
+          onclick="active(this.id)">Destinations for outdoor adventure</p>
+        <p id="future-getaways__third-container__link" class="mr-6 text-lg text-gray-500 pb-3 cursor-pointer"
+          onclick="active(this.id)">Mountain Cabins</p>
+        <p id="future-getaways__fourth-container__link" class="mr-6 text-lg text-gray-500 pb-3 cursor-pointer"
+          onclick="active(this.id)">Beach destinations</p>
+        <p id="future-getaways__fifth-container__link" class="mr-6 text-lg text-gray-500 pb-3 cursor-pointer"
+          onclick="active(this.id)">Popular destinations</p>
+      </div>
+      <div class="future-getaways__main-container">
+        <div class="future-getaways__first-container flex flex-wrap my-2">
+          <div class="w-80 mt-6">
+            <p class="font-medium">New York</p>
+            <p class="font-light text-gray-400">New York</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Phoenix</p>
+            <p class="font-light text-gray-400">Arizona</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Atlanta</p>
+            <p class="font-light text-gray-400">Georgia</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Chicago</p>
+            <p class="font-light text-gray-400">Illinois</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Miami</p>
+            <p class="font-light text-gray-400">Florida</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">San Diego</p>
+            <p class="font-light text-gray-400">California</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">San Fancisco</p>
+            <p class="font-light text-gray-400">California</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Nashville</p>
+            <p class="font-light text-gray-400">Tennessee</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Seattle</p>
+            <p class="font-light text-gray-400">Washington</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Bostom</p>
+            <p class="font-light text-gray-400">Massachusetts</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Philadelphia</p>
+            <p class="font-light text-gray-400">Pennsylvania</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Dallas</p>
+            <p class="font-light text-gray-400">Texas</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Austin</p>
+            <p class="font-light text-gray-400">Texas</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Washington</p>
+            <p class="font-light text-gray-400">District of Columbia</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">New Orleans</p>
+            <p class="font-light text-gray-400">Louisiana</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">San Antonio</p>
+            <p class="font-light text-gray-400">Texas</p>
+          </div>
+        </div>
+        <div class="future-getaways__second-container flex flex-wrap my-2 hidden">
+          <div class="w-80 mt-6">
+            <p class="font-medium">New York</p>
+            <p class="font-light text-gray-400">New York</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Phoenix</p>
+            <p class="font-light text-gray-400">Arizona</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Atlanta</p>
+            <p class="font-light text-gray-400">Georgia</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Chicago</p>
+            <p class="font-light text-gray-400">Illinois</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Miami</p>
+            <p class="font-light text-gray-400">Florida</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">San Diego</p>
+            <p class="font-light text-gray-400">California</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">San Fancisco</p>
+            <p class="font-light text-gray-400">California</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Nashville</p>
+            <p class="font-light text-gray-400">Tennessee</p>
+          </div>
+        </div>
+        <div class="future-getaways__third-container flex flex-wrap my-2 hidden">
+          <div class="w-80 mt-6">
+            <p class="font-medium">New York</p>
+            <p class="font-light text-gray-400">New York</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Phoenix</p>
+            <p class="font-light text-gray-400">Arizona</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Atlanta</p>
+            <p class="font-light text-gray-400">Georgia</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Chicago</p>
+            <p class="font-light text-gray-400">Illinois</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Miami</p>
+            <p class="font-light text-gray-400">Florida</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">San Diego</p>
+            <p class="font-light text-gray-400">California</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">San Fancisco</p>
+            <p class="font-light text-gray-400">California</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Nashville</p>
+            <p class="font-light text-gray-400">Tennessee</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Seattle</p>
+            <p class="font-light text-gray-400">Washington</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Bostom</p>
+            <p class="font-light text-gray-400">Massachusetts</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Philadelphia</p>
+            <p class="font-light text-gray-400">Pennsylvania</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Dallas</p>
+            <p class="font-light text-gray-400">Texas</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Austin</p>
+            <p class="font-light text-gray-400">Texas</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Washington</p>
+            <p class="font-light text-gray-400">District of Columbia</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">New Orleans</p>
+            <p class="font-light text-gray-400">Louisiana</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">San Antonio</p>
+            <p class="font-light text-gray-400">Texas</p>
+          </div>
+        </div>
+        <div class="future-getaways__fourth-container flex flex-wrap my-2 hidden">
+          <div class="w-80 mt-6">
+            <p class="font-medium">New York</p>
+            <p class="font-light text-gray-400">New York</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Phoenix</p>
+            <p class="font-light text-gray-400">Arizona</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Atlanta</p>
+            <p class="font-light text-gray-400">Georgia</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Chicago</p>
+            <p class="font-light text-gray-400">Illinois</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Miami</p>
+            <p class="font-light text-gray-400">Florida</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">San Diego</p>
+            <p class="font-light text-gray-400">California</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">San Fancisco</p>
+            <p class="font-light text-gray-400">California</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Nashville</p>
+            <p class="font-light text-gray-400">Tennessee</p>
+          </div>
+        </div>
+        <div class="future-getaways__fifth-container flex flex-wrap my-2 hidden">
+          <div class="w-80 mt-6">
+            <p class="font-medium">New York</p>
+            <p class="font-light text-gray-400">New York</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Phoenix</p>
+            <p class="font-light text-gray-400">Arizona</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Atlanta</p>
+            <p class="font-light text-gray-400">Georgia</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Chicago</p>
+            <p class="font-light text-gray-400">Illinois</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Miami</p>
+            <p class="font-light text-gray-400">Florida</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">San Diego</p>
+            <p class="font-light text-gray-400">California</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">San Fancisco</p>
+            <p class="font-light text-gray-400">California</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Nashville</p>
+            <p class="font-light text-gray-400">Tennessee</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Seattle</p>
+            <p class="font-light text-gray-400">Washington</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Bostom</p>
+            <p class="font-light text-gray-400">Massachusetts</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Philadelphia</p>
+            <p class="font-light text-gray-400">Pennsylvania</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Dallas</p>
+            <p class="font-light text-gray-400">Texas</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Austin</p>
+            <p class="font-light text-gray-400">Texas</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">Washington</p>
+            <p class="font-light text-gray-400">District of Columbia</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">New Orleans</p>
+            <p class="font-light text-gray-400">Louisiana</p>
+          </div>
+          <div class="w-80 mt-6">
+            <p class="font-medium">San Antonio</p>
+            <p class="font-light text-gray-400">Texas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-gray-100 border-t-2 border-gray-300">
+      <div class="container mx-auto py-10 border-b-2 border-gray-300">
+        <div class="flex flex-wrap">
+          <div class="w-80 mt-6">
+            <div class="footer_header">
+              <p class="font-medium">About</p>
+            </div>
+            <div class="footer_links">
+              <a href="#" class="hover:underline">How Airbnb works</a>
+              <a href="#" class="hover:underline">Newsroom</a>
+              <a href="#" class="hover:underline">Investors</a>
+              <a href="#" class="hover:underline">Airbnb Plus</a>
+              <a href="#" class="hover:underline">Airbnb Lux</a>
+              <a href="#" class="hover:underline">HotelTonight</a>
+              <a href="#" class="hover:underline">Airbnb for work</a>
+              <a href="#" class="hover:underline">Olympics</a>
+              <a href="#" class="hover:underline">Careers</a>
+            </div>
+          </div>
+          <div class="w-80 mt-6">
+            <div class="footer_header">
+              <p class="font-medium">Community</p>
+            </div>
+            <div class="footer_links">
+              <a href="#" class="hover:underline">Diversity & Belonging</a>
+              <a href="#" class="hover:underline">Against Discrimation</a>
+              <a href="#" class="hover:underline">Accessibility</a>
+              <a href="#" class="hover:underline">Airbnb Associates</a>
+              <a href="#" class="hover:underline">Frontline Stays</a>
+              <a href="#" class="hover:underline">Invite Friends</a>
+              <a href="#" class="hover:underline">Gift Cards</a>
+              <a href="#" class="hover:underline">Airbnb.org</a>
+
+            </div>
+          </div>
+          <div class="w-80 mt-6">
+            <div class="footer_header">
+              <p class="font-medium">Host</p>
+            </div>
+            <div class="footer_links">
+              <a href="#" class="hover:underline">Host your home</a>
+              <a href="#" class="hover:underline">Host an Online Experience</a>
+              <a href="#" class="hover:underline">Host an Experience</a>
+              <a href="#" class="hover:underline">Responsible Hosting</a>
+              <a href="#" class="hover:underline">Resource Center</a>
+              <a href="#" class="hover:underline">Community Center</a>
+            </div>
+          </div>
+          <div class="w-80 mt-6">
+            <div class="footer_header">
+              <p class="font-medium">Support</p>
+            </div>
+            <div class="footer_links">
+              <a href="#" class="hover:underline">Our COVID-19 Response</a>
+              <a href="#" class="hover:underline">Help Center</a>
+              <a href="#" class="hover:underline">Cancellation options</a>
+              <a href="#" class="hover:underline">Neighbourhood Support</a>
+              <a href="#" class="hover:underline">Trust & Safety</a>
             </div>
           </div>
         </div>
       </div>
-      <div class=" main-wrapper__eigth-section future-getaways pt-10 pb-20 container mx-auto w-full">
-        <h1 class="text-4xl font-bold">Inspiration for future getaways.</h1>
-        <div class="future-getaways__links-container flex whitespace-nowrap overflow-auto mt-8 border-b-2 border-gray-300">
-          <p id="future-getaways__first-container__link" class="mr-6 text-lg text-gray-500 pb-3 cursor-pointer active" onclick="active(this.id)">Destinations for arts & culture</p>
-          <p id="future-getaways__second-container__link" class="mr-6 text-lg text-gray-500 pb-3 cursor-pointer" onclick="active(this.id)">Destinations for outdoor adventure</p>
-          <p id="future-getaways__third-container__link" class="mr-6 text-lg text-gray-500 pb-3 cursor-pointer" onclick="active(this.id)">Mountain Cabins</p>
-          <p id="future-getaways__fourth-container__link" class="mr-6 text-lg text-gray-500 pb-3 cursor-pointer" onclick="active(this.id)">Beach destinations</p>
-          <p id="future-getaways__fifth-container__link" class="mr-6 text-lg text-gray-500 pb-3 cursor-pointer" onclick="active(this.id)">Popular destinations</p>
+      <div class="container mx-auto py-5 flex justify-between">
+        <div class="flex">
+          <p class="mr-2">&copy; 2021 Airbnb, Inc. All Rights Reserved</p>
+          <span class="mr-2">&middot;</span>
+          <a href="#" class="mr-2">Privacy</a>
+          <span class="mr-2">&middot;</span>
+          <a href="#" class="mr-2">Terms</a>
+          <span class="mr-2">&middot;</span>
+          <a href="#" class="mr-2">Sitemap</a>
         </div>
-        <div class="future-getaways__main-container">
-          <div class="future-getaways__first-container flex flex-wrap my-2">
-            <div class="w-80 mt-6">
-              <p class="font-medium">New York</p>
-              <p class="font-light text-gray-400">New York</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Phoenix</p>
-              <p class="font-light text-gray-400">Arizona</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Atlanta</p>
-              <p class="font-light text-gray-400">Georgia</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Chicago</p>
-              <p class="font-light text-gray-400">Illinois</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Miami</p>
-              <p class="font-light text-gray-400">Florida</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">San Diego</p>
-              <p class="font-light text-gray-400">California</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">San Fancisco</p>
-              <p class="font-light text-gray-400">California</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Nashville</p>
-              <p class="font-light text-gray-400">Tennessee</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Seattle</p>
-              <p class="font-light text-gray-400">Washington</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Bostom</p>
-              <p class="font-light text-gray-400">Massachusetts</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Philadelphia</p>
-              <p class="font-light text-gray-400">Pennsylvania</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Dallas</p>
-              <p class="font-light text-gray-400">Texas</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Austin</p>
-              <p class="font-light text-gray-400">Texas</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Washington</p>
-              <p class="font-light text-gray-400">District of Columbia</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">New Orleans</p>
-              <p class="font-light text-gray-400">Louisiana</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">San Antonio</p>
-              <p class="font-light text-gray-400">Texas</p>
-            </div>
-          </div>  
-          <div class="future-getaways__second-container flex flex-wrap my-2 hidden">
-            <div class="w-80 mt-6">
-              <p class="font-medium">New York</p>
-              <p class="font-light text-gray-400">New York</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Phoenix</p>
-              <p class="font-light text-gray-400">Arizona</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Atlanta</p>
-              <p class="font-light text-gray-400">Georgia</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Chicago</p>
-              <p class="font-light text-gray-400">Illinois</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Miami</p>
-              <p class="font-light text-gray-400">Florida</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">San Diego</p>
-              <p class="font-light text-gray-400">California</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">San Fancisco</p>
-              <p class="font-light text-gray-400">California</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Nashville</p>
-              <p class="font-light text-gray-400">Tennessee</p>
-            </div>
-          </div>  
-          <div class="future-getaways__third-container flex flex-wrap my-2">
-            <div class="w-80 mt-6">
-              <p class="font-medium">New York</p>
-              <p class="font-light text-gray-400">New York</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Phoenix</p>
-              <p class="font-light text-gray-400">Arizona</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Atlanta</p>
-              <p class="font-light text-gray-400">Georgia</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Chicago</p>
-              <p class="font-light text-gray-400">Illinois</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Miami</p>
-              <p class="font-light text-gray-400">Florida</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">San Diego</p>
-              <p class="font-light text-gray-400">California</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">San Fancisco</p>
-              <p class="font-light text-gray-400">California</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Nashville</p>
-              <p class="font-light text-gray-400">Tennessee</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Seattle</p>
-              <p class="font-light text-gray-400">Washington</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Bostom</p>
-              <p class="font-light text-gray-400">Massachusetts</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Philadelphia</p>
-              <p class="font-light text-gray-400">Pennsylvania</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Dallas</p>
-              <p class="font-light text-gray-400">Texas</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Austin</p>
-              <p class="font-light text-gray-400">Texas</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Washington</p>
-              <p class="font-light text-gray-400">District of Columbia</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">New Orleans</p>
-              <p class="font-light text-gray-400">Louisiana</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">San Antonio</p>
-              <p class="font-light text-gray-400">Texas</p>
-            </div>
-          </div>  
-          <div class="future-getaways__fourth-container flex flex-wrap my-2 hidden">
-            <div class="w-80 mt-6">
-              <p class="font-medium">New York</p>
-              <p class="font-light text-gray-400">New York</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Phoenix</p>
-              <p class="font-light text-gray-400">Arizona</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Atlanta</p>
-              <p class="font-light text-gray-400">Georgia</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Chicago</p>
-              <p class="font-light text-gray-400">Illinois</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Miami</p>
-              <p class="font-light text-gray-400">Florida</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">San Diego</p>
-              <p class="font-light text-gray-400">California</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">San Fancisco</p>
-              <p class="font-light text-gray-400">California</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Nashville</p>
-              <p class="font-light text-gray-400">Tennessee</p>
-            </div>
-          </div>
-          <div class="future-getaways__fifth-container flex flex-wrap my-2">
-            <div class="w-80 mt-6">
-              <p class="font-medium">New York</p>
-              <p class="font-light text-gray-400">New York</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Phoenix</p>
-              <p class="font-light text-gray-400">Arizona</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Atlanta</p>
-              <p class="font-light text-gray-400">Georgia</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Chicago</p>
-              <p class="font-light text-gray-400">Illinois</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Miami</p>
-              <p class="font-light text-gray-400">Florida</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">San Diego</p>
-              <p class="font-light text-gray-400">California</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">San Fancisco</p>
-              <p class="font-light text-gray-400">California</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Nashville</p>
-              <p class="font-light text-gray-400">Tennessee</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Seattle</p>
-              <p class="font-light text-gray-400">Washington</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Bostom</p>
-              <p class="font-light text-gray-400">Massachusetts</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Philadelphia</p>
-              <p class="font-light text-gray-400">Pennsylvania</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Dallas</p>
-              <p class="font-light text-gray-400">Texas</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Austin</p>
-              <p class="font-light text-gray-400">Texas</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">Washington</p>
-              <p class="font-light text-gray-400">District of Columbia</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">New Orleans</p>
-              <p class="font-light text-gray-400">Louisiana</p>
-            </div>
-            <div class="w-80 mt-6">
-              <p class="font-medium">San Antonio</p>
-              <p class="font-light text-gray-400">Texas</p>
-            </div>
-          </div>    
-        </div>  
-      </div>  
-      <footer class="bg-gray-100 border-t-2 border-gray-300">
-        <div class="container mx-auto py-10 border-b-2 border-gray-300">
-          <div class="flex flex-wrap">
-            <div class="w-80 mt-6">
-              <div class="footer_header">
-                <p class="font-medium">About</p>
-              </div>
-              <div class="footer_links">
-                <a href="#" class="hover:underline">How Airbnb works</a>
-                <a href="#" class="hover:underline">Newsroom</a>
-                <a href="#" class="hover:underline">Investors</a>
-                <a href="#" class="hover:underline">Airbnb Plus</a>
-                <a href="#" class="hover:underline">Airbnb Lux</a>
-                <a href="#" class="hover:underline">HotelTonight</a>
-                <a href="#" class="hover:underline">Airbnb for work</a>
-                <a href="#" class="hover:underline">Olympics</a>
-                <a href="#" class="hover:underline">Careers</a>
-              </div>
-            </div>
-            <div class="w-80 mt-6">
-              <div class="footer_header">
-                <p class="font-medium">Community</p>
-              </div>
-              <div class="footer_links">
-                <a href="#" class="hover:underline">Diversity & Belonging</a>
-                <a href="#" class="hover:underline">Against Discrimation</a>
-                <a href="#" class="hover:underline">Accessibility</a>
-                <a href="#" class="hover:underline">Airbnb Associates</a>
-                <a href="#" class="hover:underline">Frontline Stays</a>
-                <a href="#" class="hover:underline">Invite Friends</a>
-                <a href="#" class="hover:underline">Gift Cards</a>
-                <a href="#" class="hover:underline">Airbnb.org</a>
-                
-              </div>
-            </div>
-            <div class="w-80 mt-6">
-              <div class="footer_header">
-                <p class="font-medium">Host</p>
-              </div>
-              <div class="footer_links">
-                <a href="#" class="hover:underline">Host your home</a>
-                <a href="#" class="hover:underline">Host an Online Experience</a>
-                <a href="#" class="hover:underline">Host an Experience</a>
-                <a href="#" class="hover:underline">Responsible Hosting</a>
-                <a href="#" class="hover:underline">Resource Center</a>
-                <a href="#" class="hover:underline">Community Center</a>                
-              </div>
-            </div>
-            <div class="w-80 mt-6">
-              <div class="footer_header">
-                <p class="font-medium">Support</p>
-              </div>
-              <div class="footer_links">
-                <a href="#" class="hover:underline">Our COVID-19 Response</a>
-                <a href="#" class="hover:underline">Help Center</a>
-                <a href="#" class="hover:underline">Cancellation options</a>
-                <a href="#" class="hover:underline">Neighbourhood Support</a>
-                <a href="#" class="hover:underline">Trust & Safety</a>
-              </div>
-            </div>
-          </div>    
-        </div>
-        <div class="container mx-auto py-5 flex justify-between">
-          <div class="flex">
-            <p class="mr-2">&copy; 2021 Airbnb, Inc. All Rights Reserved</p>
-            <span class="mr-2">&middot;</span>
-            <a href="#" class="mr-2">Privacy</a>
-            <span class="mr-2">&middot;</span>
-            <a href="#" class="mr-2">Terms</a>
-            <span class="mr-2">&middot;</span>
-            <a href="#" class="mr-2">Sitemap</a>
-          </div>
-          <div class="flex">
-            <div class="flex items-center mr-8">
+        <div class="flex">
+          <div class="flex items-center mr-8">
             <i class="fas fa-globe text-xl mr-3"></i>
             <p class="underline">English (US)</p>
-            </div>
-            <div class="flex items-center mr-8">
+          </div>
+          <div class="flex items-center mr-8">
             <p class="mr-3">$</p>
             <p class="underline">USD</p>
-            </div>
-            <div class="flex items-center">
-              <i class="fab fa-facebook-f text-xl mr-4"></i>
-              <i class="fab fa-twitter text-xl mr-4"></i>
-              <i class="fab fa-instagram text-xl mr-4"></i>
-            </div>
+          </div>
+          <div class="flex items-center">
+            <i class="fab fa-facebook-f text-xl mr-4"></i>
+            <i class="fab fa-twitter text-xl mr-4"></i>
+            <i class="fab fa-instagram text-xl mr-4"></i>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
 
-  <script src="/assets/js/header.js"></script>
-  <script src="/assets/js/future_getaways.js"></script>
+    <script src="/assets/vendors/Calender/js/caleandar.js"></script>
+    <script src="/assets/js/calender.js"></script>
+
+    <script src="/assets/js/header.js"></script>
+    <script src="/assets/js/future_getaways.js"></script>
 </body>
+
 </html>

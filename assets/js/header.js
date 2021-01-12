@@ -1,4 +1,5 @@
 const $header = document.querySelector('.main-wrapper__second-section');
+const $check_in_calender = document.querySelector('#check-in-calender');
 const $options__container = document.querySelector('.options__container');
 const $location__container = document.querySelector('.location__container');
 const $guests__container = document.querySelector('.guests__container');
@@ -14,6 +15,14 @@ window.onscroll = () => {
 search_click = () => {
     $header.classList.remove('sticky');
     $header.classList.add('show-form');
+}
+
+check_in_out = () => {
+    if ($check_in_calender.classList.contains('hidden')){
+        $check_in_calender.classList.remove('hidden');
+    } else{
+        $check_in_calender.classList.add('hidden');
+    }
 }
 
 options_btn_click = () => {
